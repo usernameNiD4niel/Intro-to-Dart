@@ -18,5 +18,12 @@ void main() {
     return false;
   }
 
-  print(binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 17));
+  int fibonacciSequence(int n) {
+    if (n == 0 || n == 1) return n;
+    return fibonacciSequence(n - 1) + fibonacciSequence(n - 2);
+  }
+
+  print(fibonacciSequence(5));
+
+  print(binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 17], 17));
 }
