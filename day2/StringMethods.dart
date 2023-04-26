@@ -37,11 +37,12 @@ void main(List<String> args) {
   printLine();
 
   List<String> newList = fullName.split(" ").map((e) => "${e}-${e}").toList();
-  newList.forEach(print);
   printLine();
+  newList.forEach(print);
 
   Iterator<String> iterator = newList.iterator;
   while (iterator.moveNext()) {
     print(iterator.current);
   }
+  printLine();
 }
