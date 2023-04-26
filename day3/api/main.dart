@@ -9,12 +9,10 @@ void main() async {
       .then((HttpClientRequest request) => request.close())
       .then((HttpClientResponse response) {
     if (response.statusCode == HttpStatus.ok) {
-      // Request successful, parse the JSON response
       response.transform(utf8.decoder).listen((responseData) {
         print(json.decode(responseData)["fact"]);
       });
     } else {
-      // Request failed
       print('Request failed with status: ${response.statusCode}.');
     }
   });
