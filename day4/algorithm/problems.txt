@@ -1,0 +1,81 @@
+### Problem 1 (https://www.codewars.com/kata/525e5a1cb735154b320002c8/train/dart)
+Triangular numbers are so called because of the equilateral triangular shape that they occupy when laid out as dots. i.e.
+1st (1)   2nd (3)    3rd (6)
+*          **        ***
+           *         **
+                     *
+
+
+You need to return the nth triangular number. You should return 0 for out of range values:
+For example: (Input --> Output)
+0 --> 0
+2 --> 3
+3 --> 6
+-10 --> 0
+
+triangular(n) {
+  // Your code here!
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+### Problem 2 (https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad/train/dart)
+Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
+invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
+invert([]) == []
+You can assume that all values are integers. Do not mutate the input array/list.
+List<int> invert(List<int> arr) {
+  // your code here
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+### Problem 3 (https://www.codewars.com/kata/56747fd5cb988479af000028/train/dart)
+You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle 
+character. If the word's length is even, return the middle 2 characters.
+#Examples:
+Kata.getMiddle("test") should return "es"
+
+Kata.getMiddle("testing") should return "t"
+
+Kata.getMiddle("middle") should return "dd"
+
+Kata.getMiddle("A") should return "A"
+
+#Input
+
+A word (string) of length 0 < str < 1000 (In javascript you may get slightly more than 1000 in some test cases due to an error in the test cases). You do not need to test for this. This is only here to tell you that you do not need to worry about your solution timing out.
+
+#Output
+
+The middle character(s) of the word represented as a string.
+
+String getMiddle(String s) {
+  //Code goes here!
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+### Problem 4 (https://www.codewars.com/kata/5a523566b3bfa84c2e00010b/train/dart)
+Introduction and Warm-up (Highly recommended)
+Playing With Lists/Arrays Series (https://www.codewars.com/collections/playing-with-lists-slash-arrays)
+Task
+Given an array of integers , Find the minimum sum which is obtained from summing each Two integers product .
+
+Notes
+Array/list will contain positives only .
+Array/list will always have even size
+
+Input >> Output Examples
+minSum({5,4,2,3}) ==> return (22) 
+Explanation:
+The minimum sum obtained from summing each two integers product ,  5*2 + 3*4 = 22
+minSum({12,6,10,26,3,24}) ==> return (342)
+Explanation:
+The minimum sum obtained from summing each two integers product ,  26*3 + 24*6 + 12*10 = 342
+minSum({9,2,8,7,5,4,0,6}) ==> return (74)
+Explanation:
+The minimum sum obtained from summing each two integers product ,  9*0 + 8*2 +7*4 +6*5 = 74
+
+
