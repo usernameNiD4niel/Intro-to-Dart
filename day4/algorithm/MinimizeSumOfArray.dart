@@ -9,4 +9,6 @@ class MinimizeSumOfArray {
     //return the sum
     return 0;
   }
+
+  quickSort(List<int> arr, int low, int high) {}
 }
